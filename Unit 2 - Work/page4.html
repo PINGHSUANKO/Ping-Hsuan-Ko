@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>作品集 - 主頁</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #52bdfa;
+            font-family: 'Arial', sans-serif;
+            overflow: hidden;
+        }
+
+        .container {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            text-align: center;
+        }
+
+        .cover-image {
+            width: 150%;
+            max-width: 800px;
+            border-radius: 10px;
+            animation: float 3s ease-in-out infinite;
+            position: relative;
+            top: -110px; /* 調整圖片向上移動的距離 */
+            box-shadow: none; /* 移除陰影 */
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .button {
+            position: absolute;
+            bottom: -30px; /* 使兩張圖片之間有更多空間 */
+            left: 50%;
+            transform: translateX(-50%);
+            cursor: pointer;
+            animation: bounce 2s infinite;
+        }
+
+        .button img {
+            width: 400px; /* 放大圖片1倍 */
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .button img:hover {
+            transform: scale(1.2); /* 放大比例調整為1.2 */
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translate(-50%, 0);
+            }
+            50% {
+                transform: translate(-50%, -15px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="IMG 4.png" alt="主頁封面" class="cover-image">
+        <div class="button">
+            <a href="page5.html">
+                <img src="Text 4.png" alt="跳轉按鈕"> <!-- 圖片2 -->
+            </a>
+        </div>
+    </div>
+</body>
+</html>

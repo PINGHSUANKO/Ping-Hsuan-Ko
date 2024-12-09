@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>作品集 - 主頁</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #fcf281;
+            font-family: 'Arial', sans-serif;
+            overflow: hidden;
+        }
+
+        .container {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .cover-image {
+            width: 120%; /* 調整為較小的寬度 */
+            border-radius: 10px;
+            animation: float 3s ease-in-out infinite;
+            box-shadow: none; /* 移除陰影 */
+        }
+
+        .button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            margin-left: -280px; /* 增加間距 */
+        }
+
+        .button img {
+            width: 500px; /* 調整為較小的尺寸 */
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .button img:hover {
+            transform: scale(1.2); /* 放大比例調整為1.2 */
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="IMG 5.png" alt="主頁封面" class="cover-image">
+        <div class="button">
+            <a href="page6.html">
+                <img src="Text 5.png" alt="跳轉按鈕"> <!-- 圖片2 -->
+            </a>
+        </div>
+    </div>
+</body>
+</html>
